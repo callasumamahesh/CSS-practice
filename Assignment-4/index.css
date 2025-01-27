@@ -1,0 +1,40 @@
+*{
+    font-family: 'Inter';
+}
+main{
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxModels{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.contentBox,.borderBox{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+}
+
+.box{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    padding: 1rem;
+    margin: 1rem;
+    border: 5px solid black;
+}
+
+.contentBox{
+    box-sizing: content-box;
+}
+
+.borderBox{
+    box-sizing: border-box;
+}
