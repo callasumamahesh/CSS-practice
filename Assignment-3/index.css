@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    padding: 5px 50px;
+    line-height: 1.3;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    font-family: "Roboto", serif;
+    line-height: 1.5;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+code{
+    font-family: 'Inter';
+
+}
