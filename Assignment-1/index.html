@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of css</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        .internalStylingDiv{
+            padding: 10px;
+            box-shadow: 1px 3px 5px rgb(199, 193, 193);
+            border-radius: 4px;
+            display: flex;
+            margin: 1rem;
+        }
+        .heading{
+            text-transform: uppercase;
+            font-size: 20px;
+            color: blue;
+            text-align: center;
+            letter-spacing: 0.1rem;
+            padding: 20px;
+            user-select: none;
+        }
+        .description{
+            padding: 0px 10px;
+            line-height: 1.4;
+        }
+        .internalStylingDiv img{
+            width: 300px;
+            height: auto;
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;margin-top: 1rem;">Types of styling</h1>
+    <main>
+        <div class="inlineStyleDiv" style="padding: 10px;box-shadow: 1px 3px 5px rgb(199, 193, 193);border-radius: 4px;display: flex;margin: 1rem;">
+            <div>
+                <h1 style="text-align: center;text-transform: uppercase;font-size: 20px;padding: 20px;color: blue;user-select: none;letter-spacing: 0.1rem;">Inline Styling</h1>
+                <p style="padding: 0px 10px;padding-bottom: 1rem;line-height: 1.4;">The style attribute works in the same way as any
+                    other HTML attribute. We use style, followed by the
+                    equality sign (=), and then a quote where all of the 
+                    style values will be stored using the standard CSS property-value pairs - "property: value;".</p>
+            </div>
+            <div>
+                <img src="./inline.jpg" alt="Inline Styling Example" style="width: 300px;height: auto;margin: 1rem;">
+            </div>
+        </div>
+        <div class="internalStylingDiv">
+            <div>
+                <h1 class="heading">Internal Styling</h1>
+                <p class="description">Internal CSS is a form of CSS using which you can add CSS to HTML documents. It helps to design the layout of a single HTML web page and change the styles of a web page within HTML code.</p>
+            </div>
+            <div>
+                <img src="./internal.png" alt="Inline Styling Example">
+            </div>
+        </div>
+        <div class="externalStyleDiv">
+            <div>
+                <h1 class="heading">External Styling</h1>
+                <p class="description">An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet. The link to an external style sheet is placed within the head section of the page.</p>
+            </div>
+            <div>
+                <img src="./external.png" alt="Inline Styling Example">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
