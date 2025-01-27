@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px 0px;
+    font-size: 2rem;
+}
+.hoveranimation{
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+.hoveranimation p{
+    width: 200px;
+}
+
+.hoveranimation .btn{
+    padding: 12px 10px;
+    background-color: rgba(0, 0, 255, 0.7);
+    cursor: pointer;
+    color: white;
+    width: 200px;
+}
+.button1{
+    transition: all 0.3s linear;
+}
+.button1:hover{
+    background-color: rgba(0, 0, 255, 1);
+    border-radius: 4px;
+}
+
+.button2:hover {
+    position: relative;
+    animation: bounce 2s linear infinite; 
+}
+
+@keyframes bounce {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: 10px;
+    }
+    50% {
+        top: -10px;
+    }
+    75% {
+        top: 0px;
+    }
+    100% {
+        top: 0px;
+    }
+}
